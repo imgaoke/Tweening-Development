@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "outDir": "../build/js",
+        "types": [
+            "requirejs",
+            "phaser"
+        ]
+    },
+    "include": [
+        "../src/**/*.ts"
+    ]
+}

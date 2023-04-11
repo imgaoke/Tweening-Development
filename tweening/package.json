@@ -1,0 +1,20 @@
+{
+  "name": "lab04-tweening",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug-build": "tsc -p tsconfigs/tsconfig.debug.json",
+    "compile": "tsc -p tsconfigs/tsconfig.release.json",
+    "browserify": "browserify build/js/main.js -o build/js/bundle.js",
+    "uglifyjs": "uglifyjs public/js/bundle.js -o build/js/bundle.min.js",
+    "release-build": "npm run compile && npm run browserify && npm run uglifyjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/requirejs": "^2.1.32",
+    "phaser": "^3.23.0"
+  }
+}
